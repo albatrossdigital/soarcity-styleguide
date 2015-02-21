@@ -1,6 +1,7 @@
 <!doctype html>
 <html class="no-js" lang="en" >
   <head>
+    <link href='http://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700,300italic,400italic,500italic,700italic' rel='stylesheet' type='text/css'>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foundation project</title>
@@ -18,314 +19,304 @@
   </head>
   <body>
 
-    <header class="header"><div class="container">
-      <a href="#"><img class="logo" src="images/logo.png"></a>
-    </div></header>
-    <banner class="banner"><div class="container">
-      <h1>Global Style Guide</h1>
-    </div></banner>
-    <main class="content"><div class="container">
-      <section class="type">
-        <p class="heading">Typography</p>
-        <hr />
-        <h1>&lt;h1&gt; Font - 36px #222222</h1>
-        <h2>&lt;h2&gt; Font - 30px #222222</h2>
-        <h3>&lt;h3&gt; Font - 24px #222222</h3>
-        <h4>&lt;h4&gt; Font - 18px #777777</h4>
-        <h5>&lt;h5&gt; Font - 14px #222222</h5>
-        <h6>&lt;h6&gt; Font - 12px #222222</h6>
-        <p>&lt;p&gt; Font - 16px #222222 - line-height: 1.5em or 24px</p>
-      </section>
-      <div class="row">
-        <div class="col-md-6">
-          <section class="colors">
-            <div class="row">
-              <div class="col-sm-4">
-                <p class="heading">Link &lt;a&gt;</p>
-                <hr />
-                <div class="color-swatch brand-primary">
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <p class="heading">Hover</p>
-                <hr />
-                <div class="color-swatch brand-primary-alt">
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <p class="heading">Active</p>
-                <hr />
-                <div class="color-swatch brand-secondary">
-                </div>
-              </div>
-            </div>
-          </section>
-          <section class="buttons">
-            <p class="heading">Buttons</p>
-            <hr />
-            <div class="row">
-              <div class="col-sm-6 col-md-4">
-                <p class="heading">Static</p>
-                <hr />
-                <p><button type="button" class="btn btn-success">Request Item</button></p>
-                <p><button type="button" class="btn btn-primary">Borrow Item</button></p>
-                <p><button type="button" class="btn btn-danger">Download</button></p>
-              </div>
-              <div class="col-sm-6 col-md-4">
-                <p class="heading">Hover</p>
-                <hr />
-                <p><button type="button" class="btn btn-success hover">Request Item</button></p>
-                <p><button type="button" class="btn btn-primary hover">Borrow Item</button></p>
-                <p><button type="button" class="btn btn-danger hover">Download</button></p>
-              </div>
-            </div>
-          </section>
+ <!-- Fixed navbar -->
+<!-- Static navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <h3><a class="navbar-brand" href="#">Springfield</a></h3>
         </div>
-        <div class="col-sm-6 col-md-4 col-md-offset-1">
-          <section class="colors clearfix">
-            <p class="heading">Buttons</p>
-            <hr />
-            <div class="half pull-left">
-              <div class="color-swatch brand-success">
-              </div>
-            </div>
-            <div class="half pull-left">
-              <div class="color-swatch brand-success-alt">
-              </div>
-            </div>
-            <div class="half pull-left">
-              <div class="color-swatch brand-primary">
-              </div>
-            </div>
-            <div class="half pull-left">
-              <div class="color-swatch brand-primary-alt">
-              </div>
-            </div>
-            <div class="half pull-left">
-              <div class="color-swatch brand-alert">
-              </div>
-            </div>
-            <div class="half pull-left">
-              <div class="color-swatch brand-alert-alt">
-              </div>
-            </div>
-          </section>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-6">
-          <section class="sub-menus">
-            <p class="heading">Sub Menu</p>
-            <hr />
-            <div class="row">
-              <div class="col-sm-7 col-md-6">
-                <ul class="nav nav-pills nav-stacked">
-                  <li class="active"><a href="#">Active Menu Item</a></li>
-                  <li><a href="#">Menu Item 2</a></li>
-                  <li><a href="#" class="hover">Hover Menu Item</a></li>
-                  <li><a href="#">Menu Item 4</a></li>
-                  <li><a href="#">Menu Item 5</a></li>
-                </ul>
-              </div>
-            </div>
-          </section>
-          <section class="forms">
-            <p class="heading">Forms</p>
-            <hr />
-            <form role="form" class="row"><div class="col-sm-9 col-md-8">
-              <div class="form-group form-item">
-                <label for="exampleInputEmail1">Label</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Your Email">
-              </div>
-              <div class="form-group form-item">
-                <label for="exampleInputPassword1">Label</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Your Email">
-              </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </div></form>
-          </section>
-          <section class="icons">
-            <p class="heading">Icons</p>
-            <hr />
-            <div class="social-icons">
-              <ul class="list-inline">
-                <li><a class="facebook" href="http://facebook.com"><i class="fa fa-facebook-square"></i> Facebook</a></li>
-                <li><a class="twitter" href="http://twitter.com"><i class="fa fa-twitter"></i> Twitter</a></li>
-                <li><a class="pinterest" href="http://pinterest.com"><i class="fa fa-pinterest"></i> Pinterest</a></li>
-                <li><a class="youtube" href="http://youtube.com"><i class="fa fa-youtube-play"></i> Youtube</a></li>
-                <li><a class="flickr" href="http://flickr.com"><i class="fa fa-flickr"></i> Flickr</a></li>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Translate <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
               </ul>
-            </div>
-            <div class="rating-box">
-              <span class="rating">
-                <a class="star"></a><a class="star"></a><a class="star"></a><a class="star"></a><a class="star"></a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="../navbar/">Departments</a></li>
+            <li><a href="../navbar/">News</a></li>
+            <li><a href="../navbar/">Events</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="input-group form-group form-group-lg search-bar">
+              <input type="text" class="form-control" placeholder="Search for...">
+              <span class="input-group-btn">
+                <button class="btn btn-primary btn-lg" type="button">
+                  <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                </button>
               </span>
             </div>
-            <p>Icons via Font Awesome <br />
-            Full library can be found here: <br />
-            <a href="http://fontawesome.io/">http://fontawesome.io/</a></p>
-          </section>
+          </div>
         </div>
-        <div class="col-sm-6 col-md-4 col-md-offset-1">
-          <section class="dropdowns">
-            <p class="heading">Dropdowns</p>
-            <hr />
-            <div class="well">
-              <p><div class="dropdown">
-                <button class="btn btn-icon icon-right dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenu1">
-                  Explore <i class="fa fa-paper-plane"></i>
-                </button>
-                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Books</a></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">eBooks</a></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Movies & TV</a></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Music</a></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">eMagazines</a></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Audio Books</a></li>
-                </ul>
-              </div></p>
-              <div class="dropdown">
-                <button class="btn btn-icon icon-right stay-open dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenu2">
-                  Explore <i class="fa fa-paper-plane"></i>
-                </button>
-                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Books</a></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">eBooks</a></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Movies & TV</a></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Music</a></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">eMagazines</a></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Audio Books</a></li>
-                </ul>
-              </div>
-            </div>
-          </section>
-        </div>
-      </div>
-      <p class="heading">Content</p>
-      <hr />
-      <div class="row">
-        <div class="col-sm-6 col-md-5">
-          <section class="events views-teaser-list">
-            <h2 class="larger-margin-bottom">Upcoming Events</h2>
-            <div class="node node-event node-teaser content">
 
-              <h3 class="field field-name-titlefield-label-hidden field-wrapper"><a href="#" target="_blank">Tai Chi Club</a></h3>
-              <h4 class="field field-name-post-date field-label-hidden field-wrapper">Aug 7, 2014, 6:00 PM - 6:30 PM</h4>
-              <div class="field field-name-body"><p>Learn basic Tai Chi movements and mind-body strategies to help with focus. Beneficial to children with ADD/ADHD. Healthy snacks will be served.</p>
-              </div>
-            </div>
-            <div class="node node-event node-teaser content">
-
-              <h3 class="field field-name-titlefield-label-hidden field-wrapper"><a href="#" target="_blank">Book Lovers</a></h3>
-              <h4 class="field field-name-post-date field-label-hidden field-wrapper">Aug 7, 2014, 6:00 PM - 6:30 PM</h4>
-              <div class="field field-name-body"><p>If you LOVE books, then come hear sneak peeks of upcoming fiction titles! There will be plenty of giveaways for YOU! Book clubs welcome.</p>
-              </div>
-            </div>
-            <div class="node node-event node-teaser content">
-
-              <h3 class="field field-name-titlefield-label-hidden field-wrapper"><a href="#" target="_blank">Build with Legos</a></h3>
-              <h4 class="field field-name-post-date field-label-hidden field-wrapper">Aug 7, 2014, 6:00 PM - 6:30 PM</h4>
-              <div class="field field-name-body"><p>Spend an afternoon in the cool library, and build with LEGOs. Your creations will be displayed at the library. The library will provide the LEGOs.</p>
-              </div>
-            </div>
-          </section>
-        </div>
-        <div class="col-sm-4 col-sm-offset-2"><div class="row">
-          <section class="featured col-md-10">
-            <div class="panel panel-default">
-              <div class="panel-heading"><h2 class="block-title panel-title">Featured Block</h2></div>
-              <div class="panel-body">Lorem ipsum dolor sit amet, consectetur dipisicing elit, sed do.</div>
-            </div>
-          </section>
-        </div></div>
-      </div>
-      <div class="row">
-        <div class="col-md-9">
-          <section class="catalog views-teaser-list">
-            <h2 class="larger-margin-bottom">Catalog Results</h2>
-            <div class="node node-catalog node-teaser"><div class="row">
-              <div class="col-sm-3 margin-bottom-medium small-centered col-sm-uncentered">
-                <div class="field field-name-image"><img src="images/book1.jpg" /></div>
-              </div>
-              <div class="col-sm-6 margin-bottom-medium content">
-                <h3 class="field field-name-title field-label-hidden field-wrapper"><a href="#" target="_blank">The Silmarillion</a></h3>
-                <p class="field field-name-author field-wrapper">By <a href="#">Tolkien, J.R.R.</a></p>
-                <div class="field field-name-publishing">
-                  <p class="no-margin callNumber"><a href="#">Tolkien, J.</a></p>
-                  <p class="no-margin published">Published 1991</p>
-                  <p class="no-margin catalog catalog-book"><i class="fa fa-book"></i> Book</p>
-                  <p class="no-margin availability success">Available - Lone Tree, Parker</p>
-                </div>
-              </div>
-              <div class="col-sm-3">
-                <p><button type="button" class="btn btn-success">Request Item</button></p>
-                <div class="rating-box">
-                  <span class="rating">
-                    <a class="star active"></a><a class="star active"></a><a class="star active"></a><a class="star active"></a><a class="star"></a>
-                  </span>
-                </div>
-                <a href="#" class="action-link"><strong><i class="fa fa-plus"></i> My Lists</strong></a>
-              </div>
-            </div></div>
-            <div class="node node-catalog node-teaser"><div class="row">
-              <div class="col-sm-3 margin-bottom-medium small-centered col-sm-uncentered">
-                <div class="field field-name-image"><img src="images/book2.jpg" /></div>
-              </div>
-              <div class="col-sm-6 margin-bottom-medium content">
-                <h3 class="field field-name-title field-label-hidden field-wrapper"><a href="#" target="_blank">A hobbit journey discovering the enchantment of J.R.R. Tolkien's Middle-Earth</a></h3>
-                <p class="field field-name-author field-wrapper">By <a href="#">Dickerson, Matthew.</a></p>
-                <div class="field field-name-publishing">
-                  <p class="no-margin published">Published 2012</p>
-                  <p class="no-margin catalog catalog-ebook"><i class="fa fa-cloud"></i> E-book</p>
-                  <p class="no-margin availability success">Available Online</p>
-                </div>
-              </div>
-              <div class="col-sm-3">
-                <p><button type="button" class="btn btn-primary">Borrow Item</button></p>
-                <div class="rating-box">
-                  <span class="rating">
-                    <a class="star active"></a><a class="star active"></a><a class="star active"></a><a class="star active"></a><a class="star"></a>
-                  </span>
-                </div>
-                <a href="#" class="action-link"><strong><i class="fa fa-plus"></i> My Lists</strong></a>
-              </div>
-            </div></div>
-          </section>
-        </div>
-      </div>
-      <section class="thumbnails row"><div class="col-md-11">
-        <h2 class="larger-margin-bottom">Thumbnail Grid</h2>
         <div class="row">
-          <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-              <div class="field field-name-image"><img src="images/img3.jpg" /></div>
-              <h5><a href="#">Adult Learning Center</a></h5>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-              <div class="field field-name-image"><img src="images/img2.jpg" /></div>
-              <h5><a href="#">DC History Research Center</a></h5>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-              <div class="field field-name-image"><img src="images/img1.jpg" /></div>
-              <h5><a href="#">Tech Tutoring</a></h5>
-            </div>
+    
+          <div class="col-sm-6 col-md-6">
 
+            <div class="row">
+              <div class="col-xs-3 col-md-2 btn-circle">
+                <img src="http://placehold.it/80x80" class="img-circle">
+              </div>
+              <div class="col-xs-9 col-md-10">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-danger btn-lg dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Make a Payment&emsp;<span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Water Bill</a></li>
+                    <li><a href="#">Parking Ticket</a></li>
+                    <li><a href="#">Speed Camera</a></li>
+                    <li><a href="#">Birth Certificate</a></li>
+                    <li><a href="#">Property Tax</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-6">
+
+            <div class="row">
+              <div class="col-xs-3 col-md-2 btn-circle">
+                <img src="http://placehold.it/80x80" class="img-circle">
+              </div>
+              <div class="col-xs-9 col-md-10">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-success btn-lg dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Report an Issue&emsp;<span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Animals</a></li>
+                    <li><a href="#">City Streets</a></li>
+                    <li><a href="#">Food Complaints</a></li>
+                    <li><a href="#">Traffic Signs and Signals</a></li>
+                    <li><a href="#">Trash and Recycling</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div></section>
-      <section class="body">
-        <h1 class="page-title larger-margin-bottom">Page Title <small>&lt;h1&gt;</small></h1>
-        <h2 class="no-margin">Article Title Lorem Ipsum Dolor <small>&lt;h2&gt;</small></h2>
-        <h4 class="col-md-margin-bottom">Aug 22, 2014  <small>&lt;h4&gt;</small></h4>
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</p>
-        <h3>Section Title <small>&lt;h3&gt;</small></h3>
-        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-      </section>
-    </div></main>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Categories</h2>
+        </div>
+      </div>
+      <div class="row">
+    
+        <div class="col-sm-6 col-md-6 category">
+
+          <div class="row">
+            <div class="col-xs-3 col-md-2">
+              <img src="http://placehold.it/80x80" class="img-circle">
+            </div>
+            <div class="col-xs-9 col-md-10">
+              <h3><a>Business</a></h3>
+              <p>Starting a business, taxes, permits</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-6 category">
+
+          <div class="row">
+            <div class="col-xs-3 col-md-2">
+              <img src="http://placehold.it/80x80" class="img-circle">
+            </div>
+            <div class="col-xs-9 col-md-10">
+              <h3><a>Civic Services</a></h3>
+              <p>Marriage, certificates, voting</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        
+        <div class="col-sm-6 col-md-6 category">
+
+          <div class="row">
+            <div class="col-xs-3 col-md-2">
+              <img src="http://placehold.it/80x80" class="img-circle">
+            </div>
+            <div class="col-xs-9 col-md-10">
+              <h3><a>Education</a></h3>
+              <p>Pre-K, elementary, higher education</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-6 category">
+
+          <div class="row">
+            <div class="col-xs-3 col-md-2">
+              <img src="http://placehold.it/80x80" class="img-circle">
+            </div>
+            <div class="col-xs-9 col-md-10">
+              <h3><a>Environment</a></h3>
+              <p>Trees, public health, air quality</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        
+        <div class="col-sm-6 col-md-6 category">
+
+          <div class="row">
+            <div class="col-xs-3 col-md-2">
+              <img src="http://placehold.it/80x80" class="img-circle">
+            </div>
+            <div class="col-xs-9 col-md-10">
+              <h3><a>Government</a></h3>
+              <p>Official documents, elections, codes</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-6 category">
+
+          <div class="row">
+            <div class="col-xs-3 col-md-2">
+              <img src="http://placehold.it/80x80" class="img-circle">
+            </div>
+            <div class="col-xs-9 col-md-10">
+              <h3><a>Health</a></h3>
+              <p>Health care, food, public safety</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        
+        <div class="col-sm-6 col-md-6 category">
+
+          <div class="row">
+            <div class="col-xs-3 col-md-2">
+              <img src="http://placehold.it/80x80" class="img-circle">
+            </div>
+            <div class="col-xs-9 col-md-10">
+              <h3><a>Housing</a></h3>
+              <p>Assistance, permits, rentals</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-6 category">
+
+          <div class="row">
+            <div class="col-xs-3 col-md-2">
+              <img src="http://placehold.it/80x80" class="img-circle">
+            </div>
+            <div class="col-xs-9 col-md-10">
+              <h3><a>Jobs</a></h3>
+              <p>Employment, contracts, opportunities</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        
+        <div class="col-sm-6 col-md-6 category">
+
+          <div class="row">
+            <div class="col-xs-3 col-md-2">
+              <img src="http://placehold.it/80x80" class="img-circle">
+            </div>
+            <div class="col-xs-9 col-md-10">
+              <h3><a>Legal</a></h3>
+              <p>Courts, crime, police</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-6 category">
+
+          <div class="row">
+            <div class="col-xs-3 col-md-2">
+              <img src="http://placehold.it/80x80" class="img-circle">
+            </div>
+            <div class="col-xs-9 col-md-10">
+              <h3><a>Recreation</a></h3>
+              <p>Attractions, parks, programs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        
+        <div class="col-sm-6 col-md-6 category">
+
+          <div class="row">
+            <div class="col-xs-3 col-md-2">
+              <img src="http://placehold.it/80x80" class="img-circle">
+            </div>
+            <div class="col-xs-9 col-md-10">
+              <h3><a>Transportation</a></h3>
+              <p>Public transit, parking, streets</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-6 category">
+
+          <div class="row">
+            <div class="col-xs-3 col-md-2">
+              <img src="http://placehold.it/80x80" class="img-circle">
+            </div>
+            <div class="col-xs-9 col-md-10">
+              <h3><a>Utilities</a></h3>
+              <p>Water, trash, recycling</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
 
     <!-- build:js js/vendor/libraries.min.js -->
     <!-- bower:js -->

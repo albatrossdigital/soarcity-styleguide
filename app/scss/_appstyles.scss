@@ -4,10 +4,56 @@
 
 //*****************************
 
+h1, .h1 {
+  font-family: Fira sans;
+  font-size: 48px;
+  line-heoght: 1.4em;
+  color: #333333;
+}
+
+h2, .h2 {
+  font-family: Fira sans;
+  font-size: 36px;
+  line-heoght: 1.4em;
+  color: #333333;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+h3, .h3 {
+  font-family: Fira sans;
+  font-size: 24px;
+  line-heoght: 1.4em;
+  color: #333333;
+  margin-top: 0;
+}
+
 h4, .h4 {
-  color: $gray;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+  font-family: Fira sans;
+  font-size: 18px;
+  line-heoght: 1.4em;
+  color: #333333;
+}
+
+h5, .h5 {
+  font-family: Fira sans;
+  font-size: 16px;
+  line-heoght: 1.4em;
+  color: #777777;
+  font-weight: 400px;
+}
+
+h6, .h6 {
+  font-family: Fira sans;
+  font-size: 16px;
+  color: #333333;
+}
+
+p, .p {
+  font-family: Fira sans;
+  font-size: 16px;
+  color: #333333;
+  margin-bottom: 1em;
 }
 
 // Modify margins
@@ -218,6 +264,45 @@ i.fa {
     font-size: $font-size-h3;
     margin-top: 0;
   }
+}
+
+.category {
+  margin-bottom: 2em;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.btn-circle {
+  margin-top: -.5em;
+  padding-bottom: 1.5em;
+}
+
+.jumbotron {
+  padding: 2em 1em 1em;
+  margin-bottom: 3em;
+}
+
+.navbar {
+  min-height: 72px;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: 400;
+  padding: 30px 15px;
+  font-color: #333333;
+}
+
+.navbar-default .navbar-nav {
+  font-size: 16px;
+  font-family: Fira sans;
+  padding-top: 20px;
+}
+
+.search-bar {
+  padding-bottom: 2em;
 }
 
 //*******************************
