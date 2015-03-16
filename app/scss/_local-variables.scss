@@ -189,9 +189,14 @@ $btn-default-color:              #333 !default;
 $btn-default-bg:                 #fff !default;
 $btn-default-border:             #ccc !default;
 
-$btn-primary-color:              #fff !default;
-$btn-primary-bg:                 $brand-primary !default;
-$btn-primary-border:             darken($btn-primary-bg, 5%) !default;
+$btn-primary-color:              #fff;
+$btn-primary-bg:                 $brand-primary;
+$btn-primary-border:             $brand-primary-alt;
+
+$btn-secondary-color:              #fff;
+$btn-secondary-bg:                 $brand-secondary;
+$btn-secondary-border:             $brand-secondary-alt;
+
 
 $btn-success-color:              #fff !default;
 $btn-success-bg:                 $brand-success !default;

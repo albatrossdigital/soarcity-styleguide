@@ -7,8 +7,8 @@
 h1, .h1 {
   font-family: Fira sans;
   font-weight: $medium-weight;
-  font-size: 56px;
-  line-height: 1.2em;
+  font-size: 52px;
+  line-height: 1.1em;
   color: #000000;
   opacity: .87;
   margin-top: 0;
@@ -100,7 +100,7 @@ p, .p {
   line-height: 1.5em;
   color: #000000;
   opacity: .87;
-  margin: 0 0 1.5em 0;
+  margin: 0 0 1em 0;
   max-width: 660px;
 }
 
@@ -113,6 +113,31 @@ ul {
   max-width: 660px
 }
 
+.brand-primary {
+  background-color: $brand-primary;
+}
+
+.brand-primary-alt {
+  background-color: $brand-primary-alt;
+}
+
+.brand-primary-highlight {
+  background-color: $brand-primary-highlight;
+}
+
+.brand-secondary {
+  background-color: $brand-secondary;
+}
+
+.brand-secondary-alt {
+  background-color: $brand-secondary-alt;
+}
+
+.brand-secondary-highlight {
+  background-color: $brand-secondary-highlight;
+}
+
+
 .btn {
   font-family: Fira sans;
   font-weight: $regular-weight;
@@ -121,11 +146,28 @@ ul {
   font-size: 16px;
   line-height: 1.5em;
   color: #ffffff;
-  margin: 1em 0 0 0;
   padding: .75em 2em;
   border: 1px solid rgba(0, 0, 0, 0.3);
   box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.2);
   border-radius: 1px;
+  margin-top: 1em;
+}
+
+.btn-primary {
+  background-color: $brand-primary;
+
+  &:hover {
+    background-color: $brand-primary-alt;
+  }
+}
+
+.btn-secondary {
+  background-color: $brand-secondary-alt;
+  color: $gray-darker;
+
+  &:hover {
+    background-color: $brand-secondary;
+  }
 }
 
 label {
@@ -416,10 +458,6 @@ body {
   margin-top: .75em;
 }
 
-.navbar {
-  margin-bottom: 0;
-}
-
 .btn-circle {
   margin-top: -.5em;
   padding-bottom: 1.5em;
@@ -429,25 +467,33 @@ body {
   padding: 2em 1em 1em;
   margin-bottom: 3em;
 }
-
+.nav {
+  color: #ffffff;
+}
 .navbar {
   min-height: 72px;
-  background-color: #ffffff;
-  border-bottom: 1px solid #dddddd;
-  box-shadow: 0px 1px 1px #e0e0e0;
+  background-color: #eeeeee;
+  border-radius: 0;
+  margin: 0 0 1em 0;
+  box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.2);
 }
 
 .navbar-brand {
   font-size: 24px;
   font-weight: 400;
-  padding: 30px 15px;
-  color: $gray-darker;
+  padding: 1em 15px;
+  color: #ffffff;
 }
 
-.navbar-default .navbar-nav {
+.navbar-nav {
   font-size: 16px;
   font-family: Fira sans;
-  padding-top: 20px;
+  padding-top: .75em;
+  color: #ffffff;
+
+  a {
+    color: #ffffff;
+  }
 }
 
 .search-bar {
@@ -489,18 +535,18 @@ body {
     
     a {
       color: $gray-darker;
-      padding: .5em 1em;
+      padding: .75em 1em;
       margin: 0;
 
       &:hover {
-        color: $brand-primary;
+        color: $gray-base;
         text-decoration: none;
         border-radius: 0;
-        background-color: #fafafa;
+        background-color: $brand-primary-highlight;
       }
 
       &.active {
-        background-color: #cacaca;
+        background-color: #eeeeee;
       }
     }
   }
@@ -508,40 +554,64 @@ body {
 
 .nav-pills {
   &.widget {
-    margin: 0;
-    color: $gray-darker;
-    padding: 1em;
-    border: 1px solid #dddddd;
-    box-shadow: 0px 1px 2px #cccccc;
+    border-radius: 0;
+    border-left: 4px solid $brand-secondary;
+    margin: 0 0 3em 0;
 
     li {
       font-family:  Fira sans;
-      font-size: 16px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
+      font-size: 20px;
       font-weight: $regular-weight;
       
       a {
-        margin: 0 0 2px 0;
-        padding: 1em;
-        border: 1px solid rgba(0, 0, 0, 0.2);
-        box-shadow: inset 0px -2px 1px rgba(0, 0, 0, 0.2);
-        border-radius: 4px;
-        background-color: #525252;
-        color: #fafafa;
+        color: $gray-darker;
+        padding: .75em 1em;
+        margin: 0;
 
         &:hover {
+          color: $gray-base;
           text-decoration: none;
-          background-color: #424242;
+          border-radius: 0;
+          background-color: $brand-secondary-highlight;
         }
-        &:active {
-          text-decoration: none;
-          background-color: #999999;
+
+        &.active {
+          background-color: #eeeeee;
+          border-radius: 0;
         }
       }
     }
   }
 }
+
+.hero-card {
+  h1 {
+    color: $brand-primary-alt;
+  }
+  margin: 2em 0 2em 0;
+  border-bottom: 2px solid #eeeeee;
+}
+
+.search-card {
+  h2 {
+    color: #ffffff;
+    opacity: 1;
+    border-bottom: 0px;
+    margin: -.5em 0 .5em 0;
+    font-weight: $regular-weight;
+  }
+
+  p {
+    color: #ffffff;
+    opacity: .54;
+  }
+
+  margin: 2em 0 4em 0;
+  padding: 4em 2em 2em 2em;
+  background-color: $brand-primary;
+}
+    
+
 
 .paper {
   background-color: #fafafa;
@@ -566,6 +636,10 @@ body {
 
 .form-control {
   max-width: 660px;
+}
+
+.section-pad {
+  margin-bottom: 4em;
 }
 
 //*******************************
